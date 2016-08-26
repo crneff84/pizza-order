@@ -39,20 +39,24 @@ $(document).ready(function(){
   $("form#pizza-order").submit(function(event){
     event.preventDefault();
     var pizzaName = $("#pizza-name").val();
-    var sizeInput = parseInt($("input:radio[name=size]:checked").val());
-    var sauceInput = parseInt($("input:radio[name=sauce]:checked").val());
-    var toppingSum = 0;
-    $("input:checkbox:checked").each(function(){
-      toppingSum += parseInt($(this).val());
-    });
-    var thePizza = new Pizza(pizzaName, sizeInput, sauceInput, toppingSum);
-    var finalPrice = thePizza.pizzaPricer(sizeInput, sauceInput, toppingSum);
-    $("#price-output").text(finalPrice);
-    $("ul#additionalpizzas").append("<li id=another-pizza>" + thePizza.name + "</li>");
-    $("#display-output").show();
+    if (pizzaName === ""){
+      alert ("Please Name Your Pizza")
+    } else {
+      var sizeInput = parseInt($("input:radio[name=size]:checked").val());
+      var sauceInput = parseInt($("input:radio[name=sauce]:checked").val());
+      var toppingSum = 0;
+      $("input:checkbox:checked").each(function(){
+        toppingSum += parseInt($(this).val());
+      });
+      var thePizza = new Pizza(pizzaName, sizeInput, sauceInput, toppingSum);
+      var finalPrice = thePizza.pizzaPricer(sizeInput, sauceInput, toppingSum);
+      $("#price-output").text(finalPrice);
+      $("ul#additionalpizzas").append("<li id=another-pizza>" + thePizza.name + "</li>" + "Price: $" + thePizza.pizzaPricer());
+      $("#display-output").show();
+    };
   });
-  $("#")
   $("#reset-button").click(function() {
     $("#price-output").text("0.00");
+    $("ul#additionalpizzas").empty();
   });
 });
