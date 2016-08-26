@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Chance's Pizza Place</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Chance's Pizza Place</h1>
+      <div class="row">
+        <form id="pizzaorder">
+          <div class="col-md-4">
+            <div class="radio">
+              <input type="radio" name="size" value="1">
+              Small
+            </div>
+            <div class="radio">
+              <input type="radio" name="size" value="2">
+              Medium
+            </div>
+            <div class="radio">
+              <input type="radio" name="size" value="3">
+              Large
+            </div>
+            <div class="radio">
+              <input type="radio" name="size" value="4">
+              Extra Large
+            </div>
+          </div>
+          <div class="col-sm-4">
+          </div>
+          <div class="col-sm-4">
+            <div class="radio">
+              <input type="radio" name="topping" value="1">
+              Pepperoni
+            </div>
+            <div class="radio">
+              <input type="radio" name="topping" value="2">
+              Sausage
+            </div>
+            <div class="radio">
+              <input type="radio" name="topping" value="3">
+              All of the Veggies
+            </div>
+            <div class="radio">
+              <input type="radio" name="topping" value="4">
+              Extra Cheese
+            </div>
+          </div>
+          <div class="row">
+            <button id="submit-order" type="submit" class="btn btn-success">Submit Order</button>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div id="display-output">
+          <p>Total: <span id="price-output"></span></p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

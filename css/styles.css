@@ -1,0 +1,9 @@
+#display-output {
+  display: none;
+}
+
+#submit-order {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
