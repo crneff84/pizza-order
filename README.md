@@ -6,19 +6,23 @@
 
 ## Description and Specifications
 
-_This application offers the user a choice of pizza size and toppings and outputs the price of the order._
+_This application offers the user a choice of pizza size, sauce, and toppings and outputs the price of the order._
 
 * _User selects size of pizza and application outputs base price of pizza based on chosen size_
   * _Example Input: Large_
   * _Example Output: $16.00_
+
+* _User selects choice of sauce and application outputs price of toppings_
+  * _Example Input: Alfredo_
+  * _Example Output: $2.50_  
 
 * _User selects choice of toppings and application outputs price of toppings_
   * _Example Input: Pepperoni_
   * _Example Output: $1.00_
 
 * _User finalizes order by clicking submit order and application calculates total price and outputs to the user_
-  * _Example Input: Large pizza with pepperoni_
-  * _Example Output: $17.00_
+  * _Example Input: Large pizza with Alfredo sauce and pepperoni_
+  * _Example Output: $17.50_
 
 ## Setup/Installation Requirements
 
