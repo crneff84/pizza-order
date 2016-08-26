@@ -1,3 +1,11 @@
+.col-md-4 {
+  margin-left: 25px;
+}
+
+.row h2 {
+  margin-left: 5px;
+}
+
 #display-output {
   display: none;
   text-align: center;

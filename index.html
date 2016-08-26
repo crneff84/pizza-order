@@ -10,9 +10,12 @@
   </head>
   <body>
     <div class="container">
-      <h1>Chance's Pizza Place</h1>
-      <div class="row">
-        <form id="pizza-order">
+      <div class = "jumbotron">
+        <h1>Chance's Pizza Place</h1>
+      </div>
+      <form id="pizza-order">
+        <div class="row">
+          <h2>Pizza Size:</h2>
           <div class="col-md-4">
             <div class="radio">
               <input type="radio" name="size" value="1">
@@ -31,37 +34,74 @@
               Extra Large
             </div>
           </div>
-          <div class="col-sm-4">
+        </div>
+        <div class="row">
+          <h2>Pizza Sauce:</h2>
+          <div class="col-md-4">
+            <div class="radio">
+              <input type="radio" name="sauce" value="1">
+              Marinara
+            </div>
+            <div class="radio">
+              <input type="radio" name="sauce" value="2">
+              Alfredo
+            </div>
+            <div class="radio">
+              <input type="radio" name="sauce" value="3">
+              Pesto
+            </div>
+            <div class="radio">
+              <input type="radio" name="sauce" value="4">
+              Olive Oil
+            </div>
           </div>
-          <div class="col-sm-4">
-            <div class="radio">
-              <input type="radio" name="topping" value="1">
-              Pepperoni
+        </div>
+        <div class="row">
+          <h2>Toppings:</h2>
+          <div class="col-md-4">
+            <div class="checkbox">
+              <input type="checkbox" value="1"><p>Pepperoni</p>
             </div>
-            <div class="radio">
-              <input type="radio" name="topping" value="2">
-              Sausage
+            <div class="checkbox">
+              <input type="checkbox" value="2"><p>Sausage</p>
             </div>
-            <div class="radio">
-              <input type="radio" name="topping" value="3">
-              All of the Veggies
+            <div class="checkbox">
+              <input type="checkbox" value="3"><p>Bacon</p>
             </div>
-            <div class="radio">
-              <input type="radio" name="topping" value="4">
-              Extra Cheese
+            <div class="checkbox">
+              <input type="checkbox" value="4">Mushrooms</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" value="5">Chicken</label>
             </div>
           </div>
-          <div class="row">
-            <button id="submit-order" type="submit" class="btn btn-success">Submit Order</button>
+          <div class="col-md-4">
+            <div class="checkbox">
+              <input type="checkbox" value="6"><p>Ham</p>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" value="7"><p>Pineapple</p>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" value="8"><p>Extra Cheese</p>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" value="9"><p>Black Olives</p>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" value="10"><p>Onions</p>
+            </div>
           </div>
-        </form>
-      </div>
+        </div>
+        <div class="row">
+          <button id="submit-order" type="submit" class="btn btn-success">Submit Order</button>
+        </div>
+      </form>
       <div class="row">
         <div id="display-output">
           <p>Total: $<span id="price-output"></span></p>
         </div>
       </div>
     </div>
-
   </body>
 </html>
