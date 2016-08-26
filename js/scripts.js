@@ -5,26 +5,27 @@ function Pizza (size, sauce, topping) {
   this.topping = topping;
 }
 
-Pizza.prototype.pizzaPricer = function(size, sauce, topping){
+Pizza.prototype.pizzaPricer = function(size, sauce, topping) {
   var price = 0;
-  if (size === NaN) {
-    alert("Please Choose a Pizza Size");
+  if (size === 1) {
+    price += 10;
   } else if (size === 2) {
-    price +=12;
+    price += 12;
   } else if (size === 3){
     price += 14;
   } else if (size === 4) {
     price += 16;
   }
-  if (topping === "1") {
-    price += 1;
-  } else if (topping === "2") {
-    price +=2;
-  } else if (topping === "3") {
-    price += 1.50;
-  } else if (topping === "4") {
-    price += 0.5;
+  if (sauce === 1) {
+    price += 0;
+  } else if (sauce === 2) {
+    price +=2.5;
+  } else if (sauce === 3) {
+    price += 2.5;
+  } else if (sauce === 4) {
+    price += 1.5;
   }
+  var price = price += topping;
   return parseFloat(price).toFixed(2);
 }
 
@@ -38,7 +39,7 @@ $(document).ready(function(){
     $("input:checkbox:checked").each(function(){
       toppingSum += parseInt($(this).val());
     });
-    var thePizza = new Pizza(sizeInput, toppingSum);
+    var thePizza = new Pizza(sizeInput, sauceInput, toppingSum);
     var finalPrice = thePizza.pizzaPricer(sizeInput, sauceInput, toppingSum);
     $("#price-output").text(finalPrice);
     $("#display-output").show();
