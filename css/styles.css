@@ -1,5 +1,6 @@
 #display-output {
   display: none;
+  text-align: center;
 }
 
 #submit-order {
