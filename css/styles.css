@@ -33,7 +33,7 @@ body {
   text-align: center;
 }
 
- #submit-button, #reset-button {
+ #submit-button, #reset-button, #addpizza-button {
    font-size: 20px;
    color: #2E4053;
    border: solid;

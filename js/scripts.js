@@ -1,11 +1,12 @@
 //Back End
-function Pizza (size, sauce, topping) {
+function Pizza (name, size, sauce, topping) {
+  this.name = name;
   this.size = size;
   this.sauce = sauce;
   this.topping = topping;
 }
 
-Pizza.prototype.pizzaPricer = function(size, sauce, topping) {
+Pizza.prototype.pizzaPricer = function(name, size, sauce, topping) {
   var price = 0;
   if (this.size === 1) {
     price += 10;
@@ -44,7 +45,10 @@ $(document).ready(function(){
     $("#price-output").text(finalPrice);
     $("#display-output").show();
   });
-  $("#reset-button").click(function(event) {
+  $("#addpizza-button").click(function(){
+    $("ul#additionalpizzas").append("<li><span class="another-pizza"></span")
+  });
+  $("#reset-button").click(function() {
     $("#price-output").text("0.00");
   });
 });
