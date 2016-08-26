@@ -5,12 +5,14 @@
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/scripts.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Luckiest+Guy" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Chance's Pizza Place</title>
   </head>
   <body>
     <div class="container">
       <div class = "jumbotron">
+        <div class="img"></div>
         <h1>Chance's Pizza Place</h1>
       </div>
       <form id="pizza-order">
@@ -93,8 +95,9 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <button id="submit-order" type="submit" class="btn btn-success">Submit Order</button>
+        <div class="row center-block" id="button-row">
+          <button type="submit" class="btn btn-success" id="submit-button">Submit Order</button>
+          <button id="reset-button" type="reset" value="Reset" class="btn btn-warning">Reset Form</button>
         </div>
       </form>
       <div class="row">

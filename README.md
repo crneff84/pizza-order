@@ -10,7 +10,7 @@ _This application offers the user a choice of pizza size and toppings and output
 
 * _User selects size of pizza and application outputs base price of pizza based on chosen size_
   * _Example Input: Large_
-  * _Example Output: $10.00_
+  * _Example Output: $16.00_
 
 * _User selects choice of toppings and application outputs price of toppings_
   * _Example Input: Pepperoni_
@@ -18,7 +18,7 @@ _This application offers the user a choice of pizza size and toppings and output
 
 * _User finalizes order by clicking submit order and application calculates total price and outputs to the user_
   * _Example Input: Large pizza with pepperoni_
-  * _Example Output: $11.00_
+  * _Example Output: $17.00_
 
 ## Setup/Installation Requirements
 
